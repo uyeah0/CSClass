@@ -68,6 +68,50 @@ namespace CSClass
             Console.WriteLine(productB);
             Console.WriteLine(productC);
 
+            List<Student> students = new List<Student>()
+            {
+                new Student() { name = "유예영", grade = 70 },
+                new Student() { name = "양정원", grade = 95 },
+                new Student() { name = "박성훈", grade = 98 },
+                new Student() { name = "이희승", grade = 73 },
+                new Student() { name = "제이크", grade = 53 },
+                new Student() { name = "박종성", grade = 83 },
+                new Student() { name = "김선우", grade = 52 },
+                new Student() { name = "손석구", grade = 89 },
+                new Student() { name = "윤재혁", grade = 85 },
+                new Student() { name = "박정우", grade = 21 }
+            };
+
+            /*
+            foreach( var student in students)
+            {
+                if(student.grade > 60)
+                {
+                    students.Remove(student);
+                }
+            }
+            */
+            /*
+            for (int i = 0; i < students.Count; i++)
+            {
+                if(students[i].grade > 60)
+                {
+                    students.RemoveAt(i);
+                    i--;
+                }
+            }
+            */
+            for (int i = students.Count; i >= 0; i--)
+            {
+                if (students[i].grade > 1)
+                {
+                    students.RemoveAt(i);
+                }
+            }
+            foreach (var student in students)
+            {
+                Console.WriteLine(student);
+            }
         }
     }
 }
