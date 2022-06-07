@@ -101,9 +101,9 @@ namespace CSClass
                 }
             }
             */
-            for (int i = students.Count; i >= 0; i--)
+            for (int i = students.Count-1; i >= 0; i--)
             {
-                if (students[i].grade > 1)
+                if (students[i].grade > 60)
                 {
                     students.RemoveAt(i);
                 }
@@ -112,6 +112,8 @@ namespace CSClass
             {
                 Console.WriteLine(student);
             }
+
+
         }
     }
 }
