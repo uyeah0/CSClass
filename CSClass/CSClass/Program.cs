@@ -120,7 +120,12 @@ namespace CSClass
             Console.WriteLine(MyMath.Abs(52f)); // double 호출
             Console.WriteLine(MyMath.Abs(52L)); // double 호출
 
-            
+            Product productX = new Product("감자", 2000);
+            Product productY = new Product("고구마", 3000);
+
+            Console.WriteLine(productX);
+            Console.WriteLine(productY);
+            Console.WriteLine(Product.counter + "개가 생성되었습니다.");
         }
     }
 }
