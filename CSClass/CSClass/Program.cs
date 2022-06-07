@@ -113,7 +113,14 @@ namespace CSClass
                 Console.WriteLine(student);
             }
 
+            Console.WriteLine(MyMath.Abs(52));
+            Console.WriteLine(MyMath.Abs(-273));
+            Console.WriteLine(MyMath.Abs(-52));
+            Console.WriteLine(MyMath.Abs(-52.3)); // float, long은 int가 감당 불가
+            Console.WriteLine(MyMath.Abs(52f)); // double 호출
+            Console.WriteLine(MyMath.Abs(52L)); // double 호출
 
+            
         }
     }
 }
