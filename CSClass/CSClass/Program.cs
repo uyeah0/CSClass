@@ -136,6 +136,9 @@ namespace CSClass
             Console.WriteLine(Sample.value);
             Console.WriteLine("세 번째 위치");
 
+            Product product = new Product("과자", 1500);
+            productA = null;
+
         }
     }
 }
