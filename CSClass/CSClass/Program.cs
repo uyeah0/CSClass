@@ -139,6 +139,16 @@ namespace CSClass
             Product product = new Product("과자", 1500);
             productA = null;
 
+            Box box = new Box(10, 20);
+            box.Width =200;
+            box.Height = 300;
+            Console.WriteLine(box.Area);
+
+            box.Width = -10;
+            Console.WriteLine(box.Area);
+
+            Box box2 = new Box(-10, -20);
+            Console.WriteLine(box2.Area);
         }
     }
 }
