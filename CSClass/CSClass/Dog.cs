@@ -4,6 +4,7 @@ namespace CSClass
 {
     public class Dog : Animal
     {
+        int Age;
         string color;
 
         public Dog()
@@ -17,7 +18,7 @@ namespace CSClass
         }
         public void Eat()
         {
-            Console.WriteLine("");
+            Console.WriteLine("멍멍");
         }
     }
 }
