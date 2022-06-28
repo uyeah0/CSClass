@@ -155,7 +155,7 @@ namespace CSClass
             //Console.WriteLine(Fibonacci.Get(10));
             //Console.WriteLine(Fibonacci.Get(50));
             //Console.WriteLine(Fibonacci.Get(100));
-            Console.WriteLine(Fibonacci.Get(1000));
+            //Console.WriteLine(Fibonacci.Get(1000));
 
             Cat c = new Cat();
             Dog d = new Dog();
@@ -180,8 +180,11 @@ namespace CSClass
                 var cat = item as Cat;
                 if(cat != null) { cat.Meow(); } 
 
-
             }
+
+            Child ChildA = new Child();
+            Child ChildB = new Child("string");
+
         }
     }
 }
