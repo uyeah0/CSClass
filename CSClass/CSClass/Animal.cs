@@ -15,9 +15,10 @@ namespace CSClass
         {
             Console.WriteLine("냠냠");
         }
-        public void Bark()
+
+        public void Sleep()
         {
-            Console.WriteLine("멍멍");
+            Console.WriteLine("쿨쿨");
         }
     }
 }

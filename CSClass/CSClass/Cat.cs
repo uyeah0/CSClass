@@ -2,15 +2,8 @@
 
 namespace CSClass
 {
-    public class Cat
+    public class Cat : Animal
     {
-
-        int Age;
-        public Cat()
-        {
-            Age = 0;
-        }
-
         public void Meow()
         {
             Console.WriteLine("냥냥");
