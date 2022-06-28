@@ -174,7 +174,11 @@ namespace CSClass
                 item.Sleep();
                 if (item is Dog) { ((Dog)item).Bark(); }
                 if (item is Cat) { ((Cat)item).Meow(); }
-                // item is Animal;
+
+                var dog = item as Dog;
+                if(dog != null) { dog.Bark(); }
+                var cat = item as Cat;
+                if(cat != null) { cat.Meow(); } 
 
 
             }
